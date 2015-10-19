@@ -6,6 +6,17 @@ file to get more information.
 
 The same steps I did for the AndEngine repo which you can find [[https://bitbucket.org/yaroslav_havrylovych/andengine|here]].
 
+=== PROGUARD ===
+When you're configuring proguard in you app you have to set all restrictions in your app proguard rules
+(as proguard works for the whole application but not for the separate project). Particularly AndEngine Physics Extension
+will force you to add next lines to your app proguard rules:
+
+{{{
+-keep public class com.badlogic.gdx.physics.box2d.World {                                                                         
+  *;                                                                                                                              
+}
+}}}
+
 === Just information ===
 Official [[http://www.andengine.org/|WebSite]]
 
