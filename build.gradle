@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         ndk {
-            abiFilters "x86", "armeabi", "armeabi-v7a"
+            abiFilters "x86", "armeabi", "armeabi-v7a", "mips"
         }
     }
 
