@@ -2,7 +2,7 @@
 
 ## AndEngine tribute
 
-[https://github.com/YaroslavHavrylovych/andengine](https://github.com/nicolasgramlich/AndEnginePhysicsBox2DExtension/tree/GLES2-AnchorCenter/) (anchor-center) 
+[AndEngine Box 2D](https://github.com/nicolasgramlich/AndEnginePhysicsBox2DExtension/tree/GLES2-AnchorCenter/) (anchor-center) 
 extension repository fork, as the main repository is out of support.
 Checkout [original readme](https://github.com/nicolasgramlich/AndEnginePhysicsBox2DExtension/blob/GLES2/README.md)
 file to get more information.
