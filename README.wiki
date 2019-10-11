@@ -1,15 +1,18 @@
-=== AndEngine tribute ===
+[AndEgnine_image](https://koenig-media.raywenderlich.com/uploads/2012/05/AndEngine.png)
+
+## AndEngine tribute
+
 [[https://github.com/nicolasgramlich/AndEnginePhysicsBox2DExtension/tree/GLES2-AnchorCenter/|AndEnginePhysic]](anchor-center) 
-extension repository fork, as the main repository seems to be out of support.
+extension repository fork, as the main repository is out of support.
 Checkout [[https://github.com/nicolasgramlich/AndEnginePhysicsBox2DExtension/blob/GLES2/README.md|original readme]]
 file to get more information.
 
-The same steps I did for the AndEngine repo which you can find [[https://bitbucket.org/yaroslav_havrylovych/andengine|here]].
+The game engine fork you can find [here](https://github.com/YaroslavHavrylovych/andengine).
 
-=== PROGUARD ===
-When you're configuring proguard in you app you have to set all restrictions in your app proguard rules
-(as proguard works for the whole application but not for the separate project). Particularly AndEngine Physics Extension
-will force you to add next lines to your app proguard rules:
+## PROGUARD
+
+Too pass the proguard you have to to add/cover a few basic rules. These rules must be applied to the whole app, as gradlew doesn't support proguard in sub-projects. In details AndEngine Physics Extension
+forces you to next:
 
 {{{
 -keep public class com.badlogic.gdx.physics.box2d.World {                                                                         
@@ -17,14 +20,14 @@ will force you to add next lines to your app proguard rules:
 }
 }}}
 
-=== Just information ===
-Official [[http://www.andengine.org/|WebSite]]
+## Useful links
 
-Still supported [[http://andengine-community.com/|community]]
+The official AndEngine [page](http://www.andengine.org/)
 
-Official extension [[https://github.com/nicolasgramlich/AndEnginePhysicsBox2DExtension/tree/GLES2-AnchorCenter/|github repo]].
+The AndEngine community [[http://andengine-community.com/|page]]
 
-=== Changes ===
-I will try to write down all the //interesting//(not cosmetic) things I did/copied here: 
+The official extension [[https://github.com/nicolasgramlich/AndEnginePhysicsBox2DExtension/tree/GLES2-AnchorCenter/|page]].
 
-*Gradle
+## Changes
+
+* Gradle support
