@@ -11,7 +11,7 @@ The game engine fork you can find [here](https://github.com/YaroslavHavrylovych/
 
 ## PROGUARD
 
-Too pass the proguard you have to to add/cover a few basic rules. These rules must be applied to the whole app, as gradlew doesn't support proguard in sub-projects. In details AndEngine Physics Extension
+To pass Proguard, you have to add/cover a few basic rules. These rules must be applied to the whole app, as Gradle doesn't support Proguard in sub-projects. In details AndEngine Physics Extension
 forces you to next:
 
 ```
