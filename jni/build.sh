@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NDK_DIRECTORY="/Users/ngramlich/Applications/android/ndk/r8e/"
+NDK_DIRECTORY="$ANDROID_HOME/ndk-bundle/"
 
 SCRIPT_DIR="$( cd "$( dirname "${0}" )" && pwd )"
 
@@ -16,3 +16,7 @@ find . -name gdbserver -print0 | xargs -0 rm -rf
 find . -name gdb.setup -print0 | xargs -0 rm -rf
 
 popd > /dev/null
+
+rm -r ../src/main/jniLibs/*
+mv ../libs/* ../src/main/jniLibs/
+rm -r ../libs
